@@ -33,7 +33,6 @@ export const Todo = () => {
         <button type="submit">Add</button>
       </form>
 
-      {/* Print TodoList */}
       <TodoList tasks={todoList} />
     </div>
   );
