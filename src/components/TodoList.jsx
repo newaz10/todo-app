@@ -1,10 +1,13 @@
 import PropTypes from "prop-types";
+import "./TodoList.css";
 
 export const TodoList = ({ todoList }) => {
   return (
-    <ul>
+    <ul className="todo-list">
       {todoList.map((todoList, index) => (
-        <li key={index}>{todoList}</li> // Render each task in the list
+        <li key={index} className="todo-item">
+          {todoList}
+        </li> // Render each task in the list
       ))}
     </ul>
   );

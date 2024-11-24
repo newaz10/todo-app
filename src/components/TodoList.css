@@ -1,0 +1,32 @@
+/* Todo List Container */
+.todo-list {
+  list-style-type: none; 
+  margin: 1rem 0; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  max-width: 400px; 
+  margin: auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Todo List Item */
+.todo-item {
+  padding: 0.75rem 1rem; 
+  font-size: 1rem; 
+  color: #333; 
+  font-weight: bold;
+  border-bottom: 1px solid #ccc; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Last Item: No Border */
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+/* Hover Effect */
+.todo-item:hover {
+  background-color: #e6f7ff; 
+  cursor: pointer;
+}
