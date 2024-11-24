@@ -1,0 +1,44 @@
+/* Form Container */
+.form-container {
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+/* Input Container: Flexbox for alignment */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Input Styling */
+.form-input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+}
+
+/* Button Styling */
+.form-button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
