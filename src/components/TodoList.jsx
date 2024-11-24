@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 
-export const TodoList = ({ tasks }) => {
+export const TodoList = ({ todoList }) => {
   return (
     <ul>
-      {tasks.map((task, index) => (
-        <li key={index}>{task}</li> // Render each task in the list
+      {todoList.map((todoList, index) => (
+        <li key={index}>{todoList}</li> // Render each task in the list
       ))}
     </ul>
   );
@@ -12,5 +12,5 @@ export const TodoList = ({ tasks }) => {
 
 // Add prop validation
 TodoList.propTypes = {
-  tasks: PropTypes.arrayOf(PropTypes.string).isRequired, // tasks must be an array of strings and is required
+  todoList: PropTypes.arrayOf(PropTypes.string).isRequired, // tasks must be an array of strings and is required
 };
