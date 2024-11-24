@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TodoList } from "./TodoList"; // Import the child component
 
 export const Todo = () => {
   const [todo, setTodo] = useState(""); // State to hold the current input value
@@ -33,11 +34,7 @@ export const Todo = () => {
       </form>
 
       {/* Print TodoList */}
-      <ul>
-        {todoList.map((task, index) => (
-          <li key={index}>{task}</li> // Render each task in the list
-        ))}
-      </ul>
+      <TodoList tasks={todoList} />
     </div>
   );
 };
